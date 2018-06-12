@@ -1,9 +1,9 @@
 <form action="/landmarks" method="post">
   <p>
-    Landmark Name: <input type="text" name="figure[name]" id="figure_name">
+    Landmark Name: <input type="text" name="landmark[name]" id="landmark_name">
   </p>
   <p>
-    Figure Titles: <br>
+    Landmark Titles: <br>
     <% Title.all.each do |title| %>
         <input type="checkbox" name="figure[title_ids][]" value="<%= title.id %>" id="title_<%= title.id %>"> <%= title.name %>
     <% end %>
